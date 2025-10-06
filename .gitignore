@@ -20,3 +20,18 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+
+# Virtual environments
+.venv/
+env/
+venv//
+
+# conda 
+.egg.info/
+*.egg
+
+# python compiled files
+__pycache__/
+*.pyc
+*.pyo
+
