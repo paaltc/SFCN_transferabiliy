@@ -4,10 +4,10 @@ import pandas as pd
 import nibabel as nib
 import tensorflow as tf
 from tensorflow import keras
-from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
+from keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.linear_model import LinearRegression
-from loaders import load_nifti_image, create_generator
+from paaltc_repos.SFCN_transferabiliy.scripts.nifti_loaders import load_nifti_image, create_generator
 from pyment.models import RegressionSFCN
 from pyment.utils import load_select_pretrained_weights
 
