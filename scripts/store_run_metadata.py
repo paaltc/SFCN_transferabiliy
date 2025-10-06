@@ -1,4 +1,5 @@
-run_metadata.py
+'''A script to store metadata about the current run, including git commit hash, timestamp, and other relevant information.
+This can help with reproducibility and tracking the state of the codebase when the run was executed.'''
 import git
 import json
 from datetime import datetime
