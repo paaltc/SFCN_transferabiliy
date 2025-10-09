@@ -1,0 +1,8 @@
+{
+  "name": "SFCN_transferability_docker",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {},
+  "extensions": []
+}
