@@ -1,0 +1,15 @@
+## Template to create a devcontainer using requirements from an external repo and installing the repo modules with pip in it 
+
+FROM mcr.microsoft.com/devcontainers/python:3.11
+
+# Install git (if not already included)
+RUN apt-get update && apt-get install -y git
+
+# Clone external repo at a specific version/tag
+RUN git clone --branch v1.2.3 https://github.com/OWNER/EXTERNAL_REPO.git /opt/external-repo
+
+# Install dependencies from external repo
+RUN pip install -r /opt/external-repo/requirements.txt
+
+# Install the external repo in editable mode
+RUN pip install -e /opt/external-repo
